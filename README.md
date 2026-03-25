@@ -65,4 +65,4 @@ SET date = STR_TO_DATE(date, '%m/%d/%Y');
 ## ✅ Final Outcome
 - Cleaned and structured dataset ready for analysis
 - Improved data consistency and accuracy
-- Removed duplicates and handled missing values effectivelyy
+- Removed duplicates and handled missing values effectively

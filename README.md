@@ -29,3 +29,40 @@ INSERT INTO layoff_staging SELECT * FROM layoffs;
 - Identified duplicate rows
 - Removed duplicates using row_num > 1
 
+### 3. Data Standardization
+
+- ✔ Removed extra spaces using TRIM()
+- ✔ Standardized inconsistent values
+- ✔ Fixed industry values (e.g., crypto% → crypto)
+- ✔ Cleaned country names (removed trailing .)
+
+### 📅 4. Date Formatting
+
+- Converted date from TEXT → DATE format
+```sql
+UPDATE layoff_staging2
+SET date = STR_TO_DATE(date, '%m/%d/%Y');
+```
+
+### 🔍 5. Handling Missing Values
+
+- Replaced blank values with NULL.
+- Used self join to fill missing industries.
+- Removed rows where both key layoff metrics were NULL.
+
+### 🧾 6. Final Cleanup
+
+- ✔ Dropped helper column (row_num)
+- ✔ Removed unnecessary records
+- ✔ Ensured clean dataset
+
+
+
+## 🛠️ Tech Stack
+- 💾 MySQL
+- 🧠 SQL (CTEs, Window Functions, Joins)
+
+## ✅ Final Outcome
+- Cleaned and structured dataset ready for analysis
+- Improved data consistency and accuracy
+- Removed duplicates and handled missing values effectively

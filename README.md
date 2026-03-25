@@ -14,8 +14,18 @@
 | `layoff_staging`  | Initial staging table |
 | `layoff_staging2` | Final cleaned dataset |
 
+## ⚙️ Data Cleaning Workflow
+### 🧱 1. Creating Staging Table
+- Created a duplicate table to avoid modifying raw data
+- Inserted all records into staging
+
 ```sql
 CREATE TABLE layoff_staging LIKE layoffs;
 INSERT INTO layoff_staging SELECT * FROM layoffs;
 ```
+
+### 🧹 2. Removing Duplicates
+- Used ROW_NUMBER() with CTE
+- Identified duplicate rows
+- Removed duplicates using row_num > 1
 

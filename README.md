@@ -70,5 +70,5 @@ SET date = STR_TO_DATE(date, '%m/%d/%Y');
 ## 📁 Project Structure
 ### 📦 Layoff-SQL-Project
 <pre> ┣ 📜 clean_data.sql
-┗ 📄 README.md
+ ┗ 📄 README.md
       </pre>

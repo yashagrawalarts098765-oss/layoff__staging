@@ -66,3 +66,9 @@ SET date = STR_TO_DATE(date, '%m/%d/%Y');
 - Cleaned and structured dataset ready for analysis
 - Improved data consistency and accuracy
 - Removed duplicates and handled missing values effectively
+
+## 📁 Project Structure
+### 📦 Layoff-SQL-Project
+  ┣ 📜 clean_data.sql
+  ┗ 📄 README.md
+  

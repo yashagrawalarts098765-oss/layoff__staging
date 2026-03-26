@@ -69,6 +69,5 @@ SET date = STR_TO_DATE(date, '%m/%d/%Y');
 
 ## 📁 Project Structure
 ### 📦 Layoff-SQL-Project
-  ┣ 📜 clean_data.sql
-  ┗ 📄 README.md
-  
+ - ┣ 📜 clean_data.sql
+ - ┗ 📄 README.md
